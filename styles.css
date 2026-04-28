@@ -55,11 +55,12 @@ table {
 
 /* ROOT VARIABLES */
 :root {
+    --black: #000000;
     --blue: #007BFF;
+    --charcoal: #333333;
     --red: #FF4500;
     --white: #EAEAEA;
-    --black: #000000;
-    --charcoal: #333333;
+
     --font: "Inter", sans-serif;
 }
 
@@ -72,6 +73,12 @@ table {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
+    font-family: var(--font);
+}
+
+header {
+    background-color: var(--black);
+    color: var(--white);
 }
 
 /* ADD TO "INNOVATION & INVESTMENT SECTION (Photo by Kevin Matos on Unsplash) */
@@ -79,14 +86,14 @@ table {
     background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('images/vanguard-hero.jpg') no-repeat center center/cover;
     height: 80vh;
     display: grid;
-    place-items: center;
+    place-content: center;
     text-align: center;
     padding: 1rem;
     overflow: hidden;
 }
 
 header h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: var(--blue);
 }
 
@@ -100,6 +107,13 @@ header h1::before {
     width: 3.75rem;
     height: 3.75rem;
     background: url('images/vanguard-logo.svg') no-repeat center/contain;
+}
+
+header nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
 }
 
 /* THIS ONE IS DONE FOR YOU */

@@ -17,8 +17,8 @@
 
     <body>
         <!-- WRAP CONTENT IN VALIDATED, SEMANTIC HTML5 (SEE HINTS FOLDER LINKED TO IN THE CANVAS INSTRUCTIONS)-->
-        <header class="container">
-            <nav>
+        <header>
+            <nav class="container">
                 <h1>Vanguard</h1>
                 <div>
                     <h2>Main Navigation</h2>
@@ -36,12 +36,12 @@
             </section>
         </header>
 
-        <main class="container">
-            <section>
+        <main>
+            <section class="container" id="about">
                 <h2>Our Expertise. Your Edge.</h2>
                 <p>We redefine success by leveraging AI-driven analytics, market intelligence, and high-yield investment strategies to propel businesses forward. Whether you're looking to scale, optimize, or dominate, our strategic expertise delivers results.'</p>
             </section>
-            <section>
+            <section class="container" id="services">
                 <h2>What We Offer</h2>
                     <section>
                         <h3>Strategic Growth Consulting</h3>
@@ -68,41 +68,43 @@
                         <p>Strategic implementation of new ideas, technologies, and processes to drive business growth, enhance competitive advantage, and adapt to evolving market demands.</p>
                     </section>
             </section>
-            <section>
+            <section class="container">
                 <h2>Proven Results</h2>
                 <p>Our data-driven strategies have delivered outstanding ROI, leading to significant revenue growth.</p>
                     <section>
                         <h3>Profits</h3>
-                        <p>
-                            <span>Year</span>
-                            <span>Revenue ($M)</span>
-                            <span>Growth (%)</span>
-                        </p>
-                        <p>
-                            <span>2020</span>
-                            <span>$120M</span>
-                            <span>30%</span>
-                        </p>
-                        <p>
-                            <span>2021</span>
-                            <span>$180M</span>
-                            <span>50%</span>
-                        </p>
-                        <p>
-                            <span>2022</span>
-                            <span>$250M</span>
-                            <span>70%</span>
-                        </p>
-                        <p>
-                            <span>2023</span>
-                            <span>$340M</span>
-                            <span>85%</span>
-                        </p>
-                        <p>
-                            <span>2024</span>
-                            <span>$420M</span>
-                            <span>100%</span>
-                        </p>
+                        <section id="table">
+                            <p>
+                                <span>Year</span>
+                                <span>Revenue ($M)</span>
+                                <span>Growth (%)</span>
+                            </p>
+                            <p>
+                                <span>2020</span>
+                                <span>$120M</span>
+                                <span>30%</span>
+                            </p>
+                            <p>
+                                <span>2021</span>
+                                <span>$180M</span>
+                                <span>50%</span>
+                            </p>
+                            <p>
+                                <span>2022</span>
+                                <span>$250M</span>
+                                <span>70%</span>
+                            </p>
+                            <p>
+                                <span>2023</span>
+                                <span>$340M</span>
+                                <span>85%</span>
+                            </p>
+                            <p>
+                                <span>2024</span>
+                                <span>$420M</span>
+                                <span>100%</span>
+                            </p>
+                        </section>
                     </section>
                     <section>
                         <h3>Growth</h3>
@@ -116,24 +118,26 @@
                             </div>
                     </section>
             </section>
-            <section>
+            <section class="container" id="contact">
                 <h2>Contact Us</h2>
                 <p>Want to take your business to the next level? Get in touch with our elite team today.</p>
                     <form action="POST">
-                        <label for="">Full Name</label>
-                        <label for="">Email Address</label>
-                        <label for="">Company Name</label>
-                        <label for="">Industry</label>
-                        <label for="">How can we help you?</label>
-                        <button>Submit</button>
+                        <label for="full-name">Full Name</label>
+                        <label for="email-address">Email Address</label>
+                        <label for="company-name">Company Name</label>
+                        <label for="industry">Industry</label>
+                        <label for="comment">How can we help you?</label>
+                        <button type="submit">Submit</button>
                     </form>
             </section>
         </main>
 
-        <footer class="container">
-            For educational purposes only.
-            Email: info@vanguard.com
-            Phone: 480.123.4567
+        <footer>
+            <section class="container">
+                <i>For educational purposes only.</i>
+                Email: info@vanguard.com
+                Phone: 480.123.4567
+            </section>
         </footer>
     </body>
 </html>
