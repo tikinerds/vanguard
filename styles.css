@@ -97,12 +97,18 @@ header h1 {
     color: var(--blue);
 }
 
+h1 {
+    justify-self: start;
+    margin-top: -1rem;
+}
+
 /* ADD FLOATING SVG LOGO BEFORE THE H1 */
-header h1::before {
+h1::before {
     content: "";
 
     position: relative;
     display: inline-block;
+    top: 1rem;
     left:-0.5rem;
     width: 3.75rem;
     height: 3.75rem;
@@ -112,8 +118,18 @@ header h1::before {
 header nav {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    align-items: center;
+    padding: 1rem 0;
+    margin: 0;
+}
+
+
+nav div {
+    justify-self: end;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
 }
 
 /* THIS ONE IS DONE FOR YOU */
