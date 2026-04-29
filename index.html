@@ -120,25 +120,36 @@
                         </section>
                 </div>
             </section>
-            <section class="container" id="contact">
-                <h2>Contact Us</h2>
-                <p>Want to take your business to the next level? Get in touch with our elite team today.</p>
-                    <form action="POST">
+            <section id="contact">
+                <div class="container">
+                    <h2>Contact Us</h2>
+                    <p>Want to take your business to the next level? Get in touch with our elite team today.</p>
+                    <form action="https://wp.zybooks.com/form-viewer.php" method="POST" target="_blank">
                         <label for="full-name">Full Name</label>
+                        <input type="text" name="full-name" id="full-name">
+                        
                         <label for="email-address">Email Address</label>
+                        <input type="email" name="email-address" id="email-address">
+
                         <label for="company-name">Company Name</label>
+                        <input type="text" name="company-name" id="company-name">
+
                         <label for="industry">Industry</label>
+                        <input type="text" name="industry" id="industry">
+
                         <label for="comment">How can we help you?</label>
+                        <textarea name="comment" id="comment" rows="4"></textarea>
                         <button type="submit">Submit</button>
                     </form>
+                </div>
             </section>
         </main>
 
         <footer>
             <section class="container">
-                <i>For educational purposes only.</i>
-                Email: info@vanguard.com
-                Phone: 480.123.4567
+                <p><i>For educational purposes only.</i></p>
+                <p>Email: info@vanguard.com</p>
+                <p>Phone: 480.123.4567</p>
             </section>
         </footer>
     </body>
