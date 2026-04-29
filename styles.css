@@ -167,7 +167,7 @@ h3 {
 }
 
 #services {
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
 }
 
 #services section {
@@ -182,7 +182,37 @@ h3 {
 #results {
     background-color: var(--blue);
     color: var(--white);
-    margin: 3rem 0;
+    padding-bottom: 2rem;
+    margin: 0;
+}
+
+#table {
+    background-color: var(--black);
+    display: grid;
+    padding: 0;
+    margin: 0;
+}
+
+#table p {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#table p:nth-child(odd) {
+    background-color: var(--charcoal);
+}
+
+#table p:first-child {
+    background-color: var(--black);
+}
+
+#table span {
+    flex: 1;
+    border: 1px solid var(--charcoal);
+    text-align: center;
+    padding: 0.5rem;
 }
 
 /* THIS ONE IS DONE FOR YOU */
@@ -234,6 +264,7 @@ h3 {
 .bar {
     animation: stepUp 1s ease-in-out forwards;
 }
+
 
 
 /* MEDIA QUERIES (MEDIUM) */ 
