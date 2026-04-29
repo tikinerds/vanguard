@@ -18,17 +18,17 @@
     <body>
         <!-- WRAP CONTENT IN VALIDATED, SEMANTIC HTML5 (SEE HINTS FOLDER LINKED TO IN THE CANVAS INSTRUCTIONS)-->
         <header>
-            <nav class="container">
+            <div class="container">
                 <h1>Vanguard</h1>
-                <div>
+                <nav>
                     <h2>Main Navigation</h2>
                     <ul>
                         <li>About</li>
                         <li>Services</li>
                         <li>Contact</li>
                     </ul>
-                </div>
-            </nav>
+                </nav>
+            </div>
             <section>
                 <h2>Innovation & Investment</h2>
                 <p>We empower businesses to lead the future with high-impact strategies, market intelligence, and financial solutions that drive success.</p>
@@ -41,8 +41,9 @@
                 <h2>Our Expertise. Your Edge.</h2>
                 <p>We redefine success by leveraging AI-driven analytics, market intelligence, and high-yield investment strategies to propel businesses forward. Whether you're looking to scale, optimize, or dominate, our strategic expertise delivers results.'</p>
             </section>
-            <section class="container" id="services">
+            <section class="container">
                 <h2>What We Offer</h2>
+                <div id="services">
                     <section>
                         <h3>Strategic Growth Consulting</h3>
                         <p>Unlock new revenue streams and optimize market expansion strategies.</p>
@@ -67,14 +68,16 @@
                         <h3>Corporate Innovation</h3>
                         <p>Strategic implementation of new ideas, technologies, and processes to drive business growth, enhance competitive advantage, and adapt to evolving market demands.</p>
                     </section>
+                </div>
             </section>
-            <section id="results">
+            <section id="proven-results">
                 <div class="container">
                     <h2>Proven Results</h2>
                     <p>Our data-driven strategies have delivered outstanding ROI, leading to significant revenue growth.</p>
+                    <div id="results">
                         <section id="profits">
                             <h3>Profits</h3>
-                            <section id="table">
+                            <section id="table" class="results-table">
                                 <p>
                                     <span>Year</span>
                                     <span>Revenue ($M)</span>
@@ -107,7 +110,7 @@
                                 </p>
                             </section>
                         </section>
-                        <section id="growth">
+                        <section id="growth" class="bar-chart">
                             <h3>Growth</h3>
                             <!-- CODE PROVIDED FOR YOU, NOTHING TO DO FOR THE BAR CHART IN THE HTML-->
                                 <div  id="bar-chart">
@@ -118,6 +121,7 @@
                                     <div class="bar" data-year="2024" style="--height: 100%;"></div>
                                 </div>
                         </section>
+                    </div>
                 </div>
             </section>
             <section id="contact">
@@ -125,20 +129,31 @@
                     <h2>Contact Us</h2>
                     <p>Want to take your business to the next level? Get in touch with our elite team today.</p>
                     <form action="https://wp.zybooks.com/form-viewer.php" method="POST" target="_blank">
-                        <label for="full-name">Full Name</label>
-                        <input type="text" name="full-name" id="full-name">
+                        <p>
+                            <label for="full-name">Full Name</label>
+                            <input type="text" name="full-name" id="full-name">
+                        </p>
                         
-                        <label for="email-address">Email Address</label>
-                        <input type="email" name="email-address" id="email-address">
+                        <p>
+                            <label for="email-address">Email Address</label>
+                            <input type="email" name="email-address" id="email-address">
+                        </p>
 
-                        <label for="company-name">Company Name</label>
-                        <input type="text" name="company-name" id="company-name">
+                        <p>
+                            <label for="company-name">Company Name</label>
+                            <input type="text" name="company-name" id="company-name">
+                        </p>
 
-                        <label for="industry">Industry</label>
-                        <input type="text" name="industry" id="industry">
+                        <p>
+                            <label for="industry">Industry</label>
+                            <input type="text" name="industry" id="industry">
+                        </p>
 
-                        <label for="comment">How can we help you?</label>
-                        <textarea name="comment" id="comment" rows="4"></textarea>
+                        <p>
+                            <label for="comment">How can we help you?</label>
+                            <textarea name="comment" id="comment" rows="4"></textarea>
+                        </p>
+
                         <button type="submit">Submit</button>
                     </form>
                 </div>
